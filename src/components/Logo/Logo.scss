@@ -1,0 +1,14 @@
+
+.Logo {
+    // width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+
+    & svg {
+        width: 63%;
+        margin: 20px;
+    }
+}

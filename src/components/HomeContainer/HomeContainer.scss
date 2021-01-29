@@ -1,0 +1,16 @@
+.HomeContainer {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 50px 30px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-left: 240px;
+
+    @media(max-width: 900px) {
+        width: auto;
+        box-sizing: border-box;
+        margin-left: 0px;
+    }
+}

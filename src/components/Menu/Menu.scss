@@ -1,0 +1,70 @@
+@import '../../sass/variables.sass';
+
+.Menu {
+    box-sizing: border-box;
+    max-width: 240px;
+    height: 100vh;
+    background-color: $color-black;
+    position: fixed;
+    color: $color-white;
+    padding: 0 10px;
+    &__header {
+        display: none;
+    }
+
+    @media (max-width: 900px) {
+        box-sizing: border-box;
+        max-width: 100%;
+        height: 50px;
+        overflow: hidden;
+        padding-top: 40px;
+        position: sticky;
+        transform: height .2s;
+
+        &__header {
+            display: block;
+            position: absolute;
+            width: 100%;
+            top: 0;
+        }
+    
+        &__hamburguer-btn {
+            
+            width: 40px;
+            border-top: 1px solid $color-white;
+            position: absolute;
+            top: 24px;
+            right: 25px;
+            border: none;
+            outline: none;
+        }
+    
+        &__hamburguer-btn::after {
+            content: '';
+            width: 40px;
+            border-top: 2px solid #fff;
+            position: absolute;
+            top: 10px;
+            left: 0px;
+        }
+        &__hamburguer-btn::before {
+            content: '';
+            width: 40px;
+            border-top: 2px solid #fff;
+            position: absolute;
+            bottom: 10px;
+            left: 0px;
+        }
+    
+    
+
+    }
+}
+
+.show {
+    height: 100%;
+}
+
+.hidden {
+    height: 50px;
+}

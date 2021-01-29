@@ -1,0 +1,15 @@
+.PlaylistContainer {
+    width: calc(100% - 240px);
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-left: auto;
+
+    &__header {
+        height: 400px;
+    }
+
+    @media(max-width: 900px) {
+        width: auto;
+        margin-left: 0;
+    }
+}

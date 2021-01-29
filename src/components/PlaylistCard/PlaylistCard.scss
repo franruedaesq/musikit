@@ -1,0 +1,44 @@
+@import '../../sass/variables.sass';
+
+.PlaylistCard {
+    width: 160px;
+    height: 280px;
+    overflow: hidden;
+    padding: 15px;
+    background-color: #161616;
+    border-radius: 7px;
+    margin-left: 15px;
+    margin-top: 15px;
+    text-decoration: none;
+    &__img {
+        width: 100%;
+    }
+
+    &__title {
+        margin: 5px 0;
+        color: $color-white;
+        font-size: 17px;
+    }
+    &__description {
+        max-height: 63px;
+        overflow:hidden;
+        color: $color-grey-1;
+        font-size: 15px;
+    }
+
+
+    @media(max-width: 900px ) {
+        padding: 0;
+        background-color: #121212;
+        border-radius: 0px;
+        margin-left: 5px;
+        margin-top: 5px;
+        height: 225px;
+
+        &__description { 
+            display: none;
+        }
+    }
+
+
+}

@@ -1,0 +1,30 @@
+@import '../../sass/variables.sass';
+
+.Button {
+    width: 100%;
+    border: none;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: $color-grey-1;
+    border-radius: 5px;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    outline: none;
+    cursor: pointer;
+    &:hover {
+        color: $color-white;
+    }
+
+    &__text {
+        margin-top: 2px;
+        padding-left: 10px;
+    }
+}
+
+.active {
+    background-color: $color-grey-3;
+    color: $color-white;
+}
